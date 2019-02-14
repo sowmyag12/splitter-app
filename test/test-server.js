@@ -6,6 +6,8 @@ const app = require("../server.js");
 
 const expect = chai.expect;
 
+chai.use(chaiHttp);
+
 describe("index page", function() {
     it("should exist", function() {
         return chai
