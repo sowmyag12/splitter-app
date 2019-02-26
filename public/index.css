@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    border: 1px solid #000000;
+}
+section {
+    /*border: 1px solid #000000;*/
+}
+
+aside {
+    float: left;
+    width:20%;
+    height: 100%;
+    border:1px solid black;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+#nav > li:hover,  #nav > li:focus, #buttons_list > li:hover, #buttons_list > li:focus{
+    font-size: 20px;
+}
+
+#nav > li:enabled {
+    font-size: 20px;
+    font-weight: 500;
+}

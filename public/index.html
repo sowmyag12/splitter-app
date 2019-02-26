@@ -2,8 +2,43 @@
 <html>
     <head>
         <title>Splitter</title>
+        <link rel = "stylesheet" href="index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <p>Hello World</p>
+        <header>
+            <h1>Splitter</h1>
+        </header>
+        <aside>
+            <ul id="nav">
+                <li id="dashboard">Dashboard</li>
+                <li id="recent">Recent activity</li>
+                <li id="all_expenses">All Expenses</li>
+            </ul>
+            <form id="add_friend">
+                <fieldlist>
+                    <legend>Add New Friend</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" /><br/>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="friend_email" /><br/>
+                    <input type="submit" value="Add Friend">
+                </fieldlist>
+            </form>
+            <ul id="friend_list"></ul>
+        </aside>
+        <main id="main">
+            <h2>Dashboard</h2>
+            <ul id="buttons_list">
+                <li id="add_bill">Add bill</li>
+                <li id="settle_up">Settle Up</li>
+            </ul>
+            <section id="bills_list">
+                <ul id = "lent_list"></ul>
+                <ul id = "borrowed_list"></ul>
+            </section>
+        </main>
+        <script src ="store.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
